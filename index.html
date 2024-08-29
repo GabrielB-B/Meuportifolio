@@ -21,15 +21,15 @@
             </div> <!-- logo -->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre mim</a></li>
-                    <li><a href="#">Formação Educacional</a></li>
-                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#topo-do-site">Início</a></li>
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#especialidades">Formação Educacional</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato"> 
-                <a href="#">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div>
@@ -37,14 +37,14 @@
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section id="topo-do-site" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
                         <h1>BEM-VINDO AO MEU PORTFÓLIO DE DESENVOLVIMENTO WEB<span>.</span></h1>
                         <p>Sou Gabriel Bomfim Bispo, estudante de Análise e Desenvolvimento de Sistemas na Uninter e futuro desenvolvedor. Este portfólio é uma amostra da minha jornada no mundo da programação e tecnologia.</p>
                         <div class="btn-contato">
-                            <a href="#">
+                            <a href="#formulario">
                                 <button>Entre em contato</button>
                             </a>
                         </div>
@@ -57,7 +57,7 @@
             </div><!-- interface -->
         </section> <!-- topo-do-site -->
 
-        <section class="especialidades"> <!-- Essa seção é sobre minha formação educacional. -->
+        <section id="especialidades" class="especialidades"> <!-- Essa seção é sobre minha formação educacional. -->
             <div class="interface">
                 <h2 class="titulo">FORMAÇÃO <span>EDUCACIONAL.</span></h2>
                 <div class="especialidades-box">
@@ -86,34 +86,28 @@
             </div><!-- interface -->
         </section><!-- especialidades -->
 
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <div class="img-sobre">
                         <img src="imagens/soueu.jpeg" alt="">
-
                     </div><!--img-sobre-->
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU GABRIEL BOMFIM.</span></h2>
-                        <p></p>
-                        <p></p>
+                        <p>Sou Gabriel Bomfim Bispo, atualmente estudando Análise e Desenvolvimento de Sistemas (ADS) e apaixonado por tecnologia, música e trabalhos sociais. Com um forte interesse em desenvolvimento web e programação, estou sempre em busca de novos desafios que me permitam aplicar e expandir minhas habilidades técnicas. Embora ainda esteja em fase de estudos, tenho uma sólida compreensão dos fundamentos da programação e estou desenvolvendo competências em diversas áreas, incluindo Python, HTML, CSS e JavaScript..</p>
+                        <p>Meu amor por música e envolvimento em trabalhos sociais influenciam minha abordagem criativa e empática ao resolver problemas e criar soluções tecnológicas. Estou comprometido em usar a tecnologia para impactar positivamente a sociedade, aplicando meu conhecimento para desenvolver projetos que atendam às necessidades da comunidade e ofereçam valor real.</p>
+                        <p>Sempre busco desafios que me permitam crescer e aprender, e estou preparado para enfrentar novas oportunidades com entusiasmo e dedicação. Minha formação em ADS está me preparando para construir aplicações inovadoras e eficientes, e estou ansioso para aplicar esse conhecimento em projetos que unam tecnologia e impacto social.</p>
                         <div class="btn-social"> <!--Estou criando essa div para no futuro atualizar com minhas redes sociais-->
                             <a href="#"><button></button></a>
                             <a href="#"><button></button></a>
                             <a href="#"><button></button></a>
                         </div>
-
-
                     </div><!--txt-sobre-->
-
                 </div>
-
-
             </div><!--interface-->
-
         </section><!--sobre-->
 
-        <section class="portfolio"> <!--Estou usando uma imagem de um projeto de designe no lugar dos links de sites que foram pedidos, porque eu não tenho ainda outros projetos realizados-->
+        <section id="portfolio" class="portfolio"> <!--Estou usando uma imagem de um projeto de designe no lugar dos links de sites que foram pedidos, porque eu não tenho ainda outros projetos realizados-->
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
                 <div class="flex">
@@ -128,33 +122,32 @@
                     <div class="img-port" style="background-image: url(imagens/imagem.jpg) ;">
                         <div class="overlay">projeto 3</div>
                     </div>
-                        
-
                 </div><!--flex-->
-
             </div><!--interface-->
+        </section><!--portfolio-->
 
-            </section><!--portfolio-->
+        <section id="formulario" class="formulario">
+            <div class="interface">
+                <h2 class="titulo">FALA <span>COMIGO.</span></h2>
 
-            <section class="formulario">
-                <div class="interface">
-                    <h2 class="titulo">FALA <span>COMIGO.</span></h2>
-
-                    <form action="">
-                        <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                        <input type="text" name="" id="" placeholder="Seu e-mail:"required>
-                        <input type="text" name="" id="" placeholder="Seu celular:">
-                        <textarea name="" id=""placeholder="Sua mensagem"></textarea>
-                        <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
-
-                    </form>
-
-
-
-                </div><!--interface-->
-
-
-            </section><!--formulario-->
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+                    <input type="text" name="" id="" placeholder="Seu celular:">
+                    <textarea name="" id="" placeholder="Sua mensagem"></textarea>
+                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                </form>
+            </div><!--interface-->
+        </section><!--formulario-->
     </main>
+    <footer>
+        <div class="footer-interface">
+            <div class="footer-logo">
+                <img src="imagens/logo.png" alt="Logo do Rodapé">
+            </div>
+            <p>&copy; 2024 Gabriel Bomfim Bispo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    
 </body>
 </html>
